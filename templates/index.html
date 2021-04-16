@@ -9,15 +9,15 @@
 
 <body>
 
-    <div style="color:green">
+    <div style="color:white">
         <form action="{{ url_for('predict')}}" method="post">
-            <h2>Predictive analysis</h2>
+            <h2>Car Price Prediction</h2>
             <h3>Year</h3>
-            <input id="first" name="Year" type="number " required="required">
+            <input id="first" name="Year" type="number" required="required">
             <h3>Showroom Price(In lakhs)</h3><br><input id="second" name="Present_Price" required="required">
             <h3>Kilometers Driven</h3><input id="third" name="Kms_Driven" required="required">
-            <h3>N. of owners</h3><br><select id="fourth" name="Owner" required="required">
-                <option value="0">0</option>
+            <h3>No. of owners</h3><br><select name="Owner" id="fourth" required="required">
+			    <option value="0">0</option>
                 <option value="1">1</option>
                 <option value="3">3</option>
             </select>
@@ -44,7 +44,7 @@
 
 
 
-        <br><br><br><h3 color="blue"> {{ prediction_text }}<h3>
+        <br><br><br><h3 color="blue">{{ prediction_text }}<h3>
     </div>
 
 
@@ -52,14 +52,17 @@
 
     <style>
         body {
-            background-color: lightgray;
-            text-align: center;
-            padding: 0px;
+              background-image: url("C:/Users/nidia/Downloads/BMW4.jpg");
+			  background-position: left; 
+			  background-repeat: no-repeat;
+			  background-size: cover;
+              text-align: leftwards;
+              padding: 100px;
         }
         
         #research {
             font-size: 18px;
-            width: 100px;
+            nwidth: 100px;
             height: 23px;
             top: 23px;
         }
@@ -95,7 +98,7 @@
         }
         
         #research {
-            width: 99px;
+            width: 150px;
             height: 43px;
             text-align: center;
             border-radius: 14px;
@@ -107,7 +110,7 @@
         }
         
         #resea {
-            width: 99px;
+            width: 120px;
             height: 43px;
             text-align: center;
             border-radius: 14px;
@@ -145,7 +148,7 @@
         }
         
         #third {
-            border-radius: 18px;
+            border-radius: 14px;
             height: 25px;
             font-size: 20px;
             text-align: center;
